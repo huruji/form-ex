@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>hope后台登录表单</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<style>
+	*{
+		margin:0;
+		padding:0;
+	}
+	legend{
+		display:none;
+	}
+	fieldset{
+		border:none;
+	}
+	a{
+		text-decoration:none;
+		color:#ccc;
+	}
+	html{
+		height:100%;
+	}
+	body{
+		background-image:-webkit-gradient(linear,left top,left bottom,from(#1990DF),to(#003C74));/*针对webkit引擎老式语法*/
+		background-image:-webkit-linear-gradient(top,#1990DF,#003C74);
+		background-image:-moz-linear-gradient(top,#1990DF,#003C74);
+		background-image:-ms-linear-gradient(top,#1990DF,#003C74);
+		background-image:-o-linear-gradient(top,#1990DF,#003C74);
+		background-image:linear-gradient(top,#1990DF,#003C74);
+		width:100%;
+		height:100%;
+	}
+	.login{
+		height:320px;
+		width:500px;
+		padding:30px 60px;
+		position:absolute;
+		top:50%;
+		left:50%;
+		margin:-180px  0 0 -310px;
+		background-image:-webkit-gradient(linear,left top,left bottom,from(#fff),to(#eee));/*针对webkit引擎老式语法*/
+		background-image:-webkit-linear-gradient(top,#fff,#eee);
+		background-image:-moz-linear-gradient(top,#fff,#eee);
+		background-image:-ms-linear-gradient(top,#fff,#eee);
+		background-image:-o-linear-gradient(top,#fff,#eee);
+		background-image:linear-gradient(top,#fff,#eee);
+	}
+	.login::before{
+		content:"";
+		border:1px dashed #ccc;
+		width:600px;
+		height:360px;
+		position:absolute;
+		top:10px;
+		left:10px;
+	}
+	.logo{
+		position:relative;
+		width:252px;
+		height:42px;
+		margin:20px auto 35px;
+	}
+	.logo::before{
+		content:"";
+		height:1px;
+		width:100px;
+		background-image:-webkit-gradient(linear,right,left,from(#93beca),to(#fff));/*针对webkit引擎老式语法*/
+		background-image:-webkit-linear-gradient(right,#93beca,#fff);
+		background-image:-moz-linear-gradient(right,#93beca,#fff);
+		background-image:-ms-linear-gradient(right,#93beca,#fff);
+		background-image:-o-linear-gradient(right,#93beca,#fff);
+		background-image:linear-gradient(right,#93beca,#fff);
+		position:absolute;
+		top:20px;
+		left:-120px;
+	}
+	.logo::after{
+		content:"";
+		height:1px;
+		width:100px;
+		background-image:-webkit-gradient(linear,left,right,from(#93beca),to(#fff));/*针对webkit引擎老式语法*/
+		background-image:-webkit-linear-gradient(left,#93beca,#fff);
+		background-image:-moz-linear-gradient(left,#93beca,#fff);
+		background-image:-ms-linear-gradient(left,#93beca,#fff);
+		background-image:-o-linear-gradient(left,#93beca,#fff);
+		background-image:linear-gradient(left,#93beca,#fff);
+		position:absolute;
+		top:20px;
+		right:-120px;
+	}
+	.in-value{
+		height:18px;
+		font-size:16px;
+		border:1px solid #ccc;
+		padding:10px;
+		width:300px;
+		border-radius:5px;
+		display:inline-block;
+		margin-left:10px;
+		outline:none;
+		margin-bottom:10px;
+	}
+	.check{
+		width:200px;
+	}
+	.input{
+		margin-left:60px;
+	}
+	.login-btn{
+		width:100px;
+		height:40px;
+		border-width:1px;
+		border-style:solid;
+		border-color:#d69e31 #e3a037 #d5982d #e3a037;
+		box-sizing: border-box;
+		border-radius:3px;
+		background-image:-webkit-gradient(linear,left top,left bottom,from(#fddb6f),to(#ffb94b));/*针对webkit引擎老式语法*/
+		background-image:-webkit-linear-gradient(top, #fddb6f, #ffb94b);
+		background-image:-moz-linear-gradient(top, #fddb6f, #ffb94b);
+		background-image:-ms-linear-gradient(top, #fddb6f, #ffb94b);
+		background-image:-o-linear-gradient(top, #fddb6f, #ffb94b);
+		background-image:linear-gradient(top, #fddb6f, #ffb94b);
+		color:#8f5a0a;
+		cursor:pointer;
+		font-size:15px;
+		font-weight:700;
+		outline:none;
+	}
+	.user-action{
+		margin:10px 0 0 118px;
+	}
+	.user-action span{
+		display:inline-block;
+		margin-left:10px;
+		cursor:pointer;
+	}
+	.info{
+		color:#999;
+		position:absolute;
+		right:20px;
+		bottom:20px;
+	}
+	.info a{
+		color:#999;
+	}
+</style>
+</head>
+<body>
+    <form action="" class="login">
+    	<div class="logo">
+    		<img src="img/hope-login.png" alt="">
+    	</div>
+    	<fieldset class="input">
+    		<legend>厚朴CMS登录表单</legend>
+			<p><label for="name">用户名</label><input type="text"class="in-value"placeholder="用户名"/></p>
+			<p><label for="name">密&nbsp;码</label><input type="text"class="in-value"placeholder="密码"/></p>
+			<p><label for="name">验证码</label><input type="text"class="in-value check"placeholder="验证码"/></p>
+    	</fieldset>
+    	<fieldset class="user-action">
+    		<legend>厚朴CMS登录选项表单</legend>
+			<input type="button" class="login-btn" value="登录"/>
+			<span><input type="checkbox"/>保持一周</span>
+    	</fieldset>
+    	<div class="info">
+    		技术支持:<a href="#">厚朴〖HOPE〗工作室</a>
+    	</div>
+    </form>
+</body>
+</html>
+<!--当要使body的高度充满整个屏幕时，应该同时设置html和body标签的高度为100%，css3中的线性渐变应该注意考虑webkit的老旧引擎的不同写法-->
