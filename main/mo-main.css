@@ -1,0 +1,185 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-04-12 14:09:16
+ * @version $Id$
+ */
+ *{
+		margin:0;
+		padding:0;
+	}
+	a{
+		text-decoration: none;
+		color:#000;
+	}
+	legend{
+		display:none;
+	}
+	body{
+		font-family:Arial,'Heiti SC','Microsoft YaHei';
+	}
+	.floatfix::after{
+		content:"";
+		clear:both;
+		display:block;
+	}
+	.login-container{
+		background:url(img/mologinbg.jpg) center no-repeat;
+		height:400px;
+		background-size:cover;/*使背景足够大足以覆盖页面*/
+	}
+	.login-content{
+		width:1000px;
+		margin:0 auto;
+	}
+	.login-left{
+		float:left;
+		padding-top:20px;
+		width:500px;
+	}
+	.left-content{
+		margin-left:50px;
+		margin-top:100px;
+	}
+	.left-content span{
+		display:block;
+		text-align:center;
+		color:#e8f4ff;
+		font-size:24px;
+	}
+	.left-content p{
+		text-align:center;
+		color:#e8f4ff;
+		margin:20px 0;
+		font-size:18px;
+	}
+	p.zh-intro{
+		font-size:14px;
+	}
+	.login-right{
+		float:right;
+		width:330px;
+		height:350px;
+		padding:25px 0;
+		position:relative;
+	}
+	.opacity{
+		width:100%;
+		height:100%;
+		background:#7d7d7d;
+		opacity:.3;
+		position:absolute;
+		top:0;
+		left:0;
+	}
+	.login-opa{
+		margin:0 30px;
+	}
+	.opa{
+		width:135px;
+		height:45px;
+		line-height:45px;
+		position:relative;
+		float:left;
+		text-align:center;
+		color:#fff;
+		opacity:.5;
+		cursor:pointer;
+	}
+	.opa::before{
+		content:"";
+		width:100%;
+		height:2px;
+		background:#426dbd;
+		position:absolute;
+		bottom:0;
+		left:0;
+	}
+	.active{
+		opacity:1;
+	}
+	.active::before{
+		display:block;
+	}
+	.mo-form{
+		margin:0 10px;
+		position:relative;
+	}
+	.login-input{
+		width:310px;
+		margin-top:40px;
+		border:2px solid rgba(255, 255, 255, 0.5);
+		box-sizing: border-box;
+		height:38px;
+		border-radius:8px;
+		padding-left:35px;
+		cursor:text;
+		position:relative;
+		outline:0;
+	}
+	.sign-for{
+		margin-top: 20px;
+	}
+	.sign-input{
+		width:310px;
+		margin-top:20px;
+		border:2px solid rgba(255, 255, 255, 0.5);
+		box-sizing: border-box;
+		height:38px;
+		border-radius:8px;
+		padding-left:35px;
+		cursor:text;
+		position:relative;
+		outline:0;
+	}
+	.adress{
+		background:url(img/mo-adress.png) no-repeat 10px center;
+	}
+	.pw{
+		background:url(img/mo-pw.png) no-repeat 10px center;
+	}
+	.name{
+		background:url(img/sign-name.png) no-repeat 10px center;
+	}
+	.auto-login{
+		margin:10px 0 0 10px;
+	}
+	.auto-login label{
+		color:#d6d6d6;
+		font-size: 14px
+	}
+	.auto-login span{
+		display:inline-block;
+		float:right;
+	}
+	.auto-login span a{
+		color:#d6d6d6;
+		font-size: 14px;
+	}
+	.auto-login input{
+		width:16px;
+		height:16px;
+		vertical-align: middle;
+	}
+	.sign-for{
+		display:none;
+	}
+	.btn{
+		width:100%;
+		height:40px;
+		border-radius: 20px;
+		color:#fff;
+		line-height: 40px;
+		margin:40px 0 20px 0;
+		text-align:center;
+		background:#426dbd;
+		cursor:pointer;
+	}
+	.quick-login{
+		margin-left:20px;
+	}
+	.quick-login span{
+		margin-right:20px;
+		display:inline-block;
+	}
